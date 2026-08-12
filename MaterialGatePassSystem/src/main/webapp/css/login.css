@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,40,80,.65),rgba(0,40,80,.65)),
+    url("../images/steel-plant.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+
+    width:420px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    color:white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.login-box h1{
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:#FFC107;
+
+}
+
+.login-box h3{
+
+    text-align:center;
+
+    margin-top:8px;
+
+    font-weight:400;
+
+}
+
+.login-box h2{
+
+    text-align:center;
+
+    margin:30px 0;
+
+}
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px 50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.input-box i:first-child{
+
+    position:absolute;
+
+    left:18px;
+
+    top:17px;
+
+    color:#005BAC;
+
+}
+
+#togglePassword{
+
+    position:absolute;
+
+    right:18px;
+
+    top:17px;
+
+    color:#005BAC;
+
+    cursor:pointer;
+
+}
+
+.options{
+
+    text-align:right;
+
+    margin-bottom:20px;
+
+}
+
+.options a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#FFC107;
+
+    color:#003366;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:white;
+
+    transform:scale(1.03);
+
+}
+
+.register{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.register a{
+
+    color:#FFC107;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.home{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.home a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.home a:hover{
+
+    color:#FFC107;
+
+}

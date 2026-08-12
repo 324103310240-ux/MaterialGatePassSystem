@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>View Application</title>
+
+<link rel="stylesheet" href="../css/view-application.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<h2>RINL</h2>
+
+<ul>
+
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</li>
+
+<li onclick="location.href='apply-gatepass.html'">
+<i class="fa-solid fa-file-circle-plus"></i>
+Apply Gate Pass
+</li>
+
+<li onclick="location.href='my-applications.html'">
+<i class="fa-solid fa-folder-open"></i>
+My Applications
+</li>
+
+<li class="active">
+<i class="fa-solid fa-eye"></i>
+View Application
+</li>
+
+<li>
+<i class="fa-solid fa-chart-line"></i>
+Reports
+</li>
+
+<li>
+<i class="fa-solid fa-user"></i>
+Profile
+</li>
+
+<li onclick="location.href='../index.html'">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<h1>Gate Pass Details</h1>
+
+<div class="card">
+
+<h2>Request Information</h2>
+
+<div class="grid">
+
+<div>
+
+<label>Request ID</label>
+
+<input type="text" id="requestId" readonly>
+
+</div>
+
+<div>
+
+<label>Status</label>
+
+<input type="text" id="status" readonly>
+
+</div>
+
+<div>
+
+<label>Department</label>
+
+<input type="text" id="department" readonly>
+
+</div>
+
+<div>
+
+<label>Gate Pass Type</label>
+
+<input type="text" id="gatePassType" readonly>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Material Details</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Material</th>
+
+<th>Category</th>
+
+<th>Quantity</th>
+
+<th>Unit</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Steel Rod</td>
+
+<td>Raw Material</td>
+
+<td>100</td>
+
+<td>Kg</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Vehicle Details</h2>
+
+<div class="grid">
+
+<input type="text" value="AP31AB1234" readonly>
+
+<input type="text" value="Truck" readonly>
+
+<input type="text" value="ABC Transport" readonly>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Driver Details</h2>
+
+<div class="grid">
+
+<input type="text" value="Ramesh" readonly>
+
+<input type="text" value="9876543210" readonly>
+
+<input type="text" value="DL123456789" readonly>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Destination</h2>
+
+<div class="grid">
+
+<input type="text" value="Visakhapatnam Port" readonly>
+
+<input type="text" value="15-07-2026" readonly>
+
+<textarea readonly>Material Dispatch</textarea>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Documents</h2>
+
+<button>View Invoice</button>
+
+<button>View Material Photo</button>
+
+<button>View Supporting Document</button>
+
+</div>
+
+<div class="buttons">
+
+<button onclick="location.href='my-applications.html'">
+
+Back
+
+</button>
+
+<button onclick="window.print()">
+
+Print
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/view-application.js"></script>
+
+</body>
+
+</html>

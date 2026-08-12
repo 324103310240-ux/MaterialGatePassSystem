@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Approver Dashboard</title>
+
+<link rel="stylesheet" href="../css/approver-dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-industry"></i>
+
+<h2>RINL</h2>
+
+</div>
+
+<ul>
+
+<li class="active">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</li>
+
+<li onclick="location.href='view-request.html'">
+
+<i class="fa-solid fa-file-circle-check"></i>
+
+Pending Requests
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-circle-check"></i>
+
+Approved
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-circle-xmark"></i>
+
+Rejected
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-chart-column"></i>
+
+Reports
+
+</li>
+
+<li onclick="location.href='../index.html'">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<h1>
+
+Approver Dashboard
+
+</h1>
+
+<div class="user">
+
+<i class="fa-solid fa-bell"></i>
+
+<span>Approver</span>
+
+<i class="fa-solid fa-circle-user"></i>
+
+</div>
+
+</div>
+
+<!-- Welcome -->
+
+<div class="welcome">
+
+<h2>
+
+Welcome 👋
+
+</h2>
+
+<p>
+
+Material Gate Pass Approval Portal
+
+</p>
+
+</div>
+
+<!-- Cards -->
+
+<div class="cards">
+
+<div class="card pending">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>Pending</h3>
+
+<h1>12</h1>
+
+</div>
+
+<div class="card approved">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h3>Approved</h3>
+
+<h1>148</h1>
+
+</div>
+
+<div class="card rejected">
+
+<i class="fa-solid fa-circle-xmark"></i>
+
+<h3>Rejected</h3>
+
+<h1>9</h1>
+
+</div>
+
+</div>
+
+<!-- Pending Requests -->
+
+<div class="table-box">
+
+<h2>
+
+Pending Requests
+
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Request ID</th>
+
+<th>Employee</th>
+
+<th>Department</th>
+
+<th>Material</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>GP001</td>
+
+<td>Gunadeep</td>
+
+<td>IT & ERP</td>
+
+<td>Steel Rod</td>
+
+<td>
+
+<span class="pending-text">
+
+Pending
+
+</span>
+
+</td>
+
+<td>
+
+<button class="view-btn"
+onclick="location.href='view-request.html'">
+
+View
+
+</button>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>GP002</td>
+
+<td>Rahul</td>
+
+<td>Mechanical</td>
+
+<td>Bearing</td>
+
+<td>
+
+<span class="pending-text">
+
+Pending
+
+</span>
+
+</td>
+
+<td>
+
+<button class="view-btn">
+
+View
+
+</button>
+
+<button class="approve-btn">
+
+Approve
+
+</button>
+
+<button class="reject-btn">
+
+Reject
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/approver-dashboard.js"></script>
+
+</body>
+
+</html>

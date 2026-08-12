@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Apply Material Gate Pass</title>
+
+<link rel="stylesheet" href="../css/gatepass.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>RINL</h2>
+
+<ul>
+
+<li onclick="location.href='dashboard.html'">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</li>
+
+<li class="active">
+<i class="fa-solid fa-file-circle-plus"></i>
+Apply Gate Pass
+</li>
+
+<li onclick="location.href='my-applications.html'">
+<i class="fa-solid fa-folder-open"></i>
+My Applications
+</li>
+
+<li onclick="location.href='../reports/dashboard.html'">
+<i class="fa-solid fa-chart-column"></i>
+Reports
+</li>
+
+<li>
+<i class="fa-solid fa-user"></i>
+Profile
+</li>
+
+<li onclick="location.href='../index.html'">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>Apply Material Gate Pass</h1>
+
+<form id="gatePassForm">
+
+<!-- Gate Pass Details -->
+
+<div class="section">
+
+<h2>Gate Pass Details</h2>
+
+<div class="grid">
+
+<div>
+
+<label>Gate Pass Type</label>
+
+<select id="gatePassType">
+
+<option value="Returnable">Returnable</option>
+
+<option value="Non Returnable">Non Returnable</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label>Department</label>
+
+<select id="department">
+
+<option>IT & ERP</option>
+
+<option>Mechanical</option>
+
+<option>Electrical</option>
+
+<option>Production</option>
+
+<option>Finance</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label>Priority</label>
+
+<select id="priority">
+
+<option>Normal</option>
+
+<option>Urgent</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label>Purpose</label>
+
+<input
+type="text"
+id="purpose"
+placeholder="Purpose of Gate Pass"
+required>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Material Details -->
+
+<div class="section">
+
+<h2>Material Details</h2>
+
+<table id="materialTable">
+
+<thead>
+
+<tr>
+
+<th>Material Name</th>
+
+<th>Category</th>
+
+<th>Quantity</th>
+
+<th>Unit</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+<input
+type="text"
+id="materialName"
+placeholder="Material Name"
+required>
+
+</td>
+
+<td>
+
+<input
+type="text"
+id="category"
+placeholder="Category"
+required>
+
+</td>
+
+<td>
+
+<input
+type="number"
+id="quantity"
+placeholder="Quantity"
+required>
+
+</td>
+
+<td>
+
+<select id="unit">
+
+<option>Nos</option>
+
+<option>Kg</option>
+
+<option>Ton</option>
+
+</select>
+
+</td>
+
+<td>
+
+<button
+type="button"
+id="addRow">
+
++
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Vehicle Details -->
+
+<div class="section">
+
+<h2>Vehicle Details</h2>
+
+<div class="grid">
+
+<div>
+
+<label>Vehicle Number</label>
+
+<input
+type="text"
+id="vehicleNo"
+placeholder="AP31AB1234"
+required>
+
+</div>
+
+<div>
+
+<label>Vehicle Type</label>
+
+<select id="vehicleType">
+
+<option>Truck</option>
+
+<option>Van</option>
+
+<option>Car</option>
+
+<option>Mini Truck</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label>Transport Company</label>
+
+<input
+type="text"
+id="transport"
+placeholder="ABC Transport"
+required>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Driver Details -->
+
+<div class="section">
+
+<h2>Driver Details</h2>
+
+<div class="grid">
+
+<div>
+
+<label>Driver Name</label>
+
+<input
+type="text"
+id="driverName"
+placeholder="Driver Name"
+required>
+
+</div>
+
+<div>
+
+<label>Driver Mobile</label>
+
+<input
+type="tel"
+id="driverMobile"
+placeholder="9876543210"
+required>
+
+</div>
+
+<div>
+
+<label>Driving License No</label>
+
+<input
+type="text"
+id="license"
+placeholder="DLXXXXXXXXXX"
+required>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Destination Details -->
+
+<div class="section">
+
+<h2>Destination Details</h2>
+
+<div class="grid">
+
+<div>
+
+<label>Destination</label>
+
+<input
+type="text"
+id="destination"
+placeholder="Destination"
+required>
+
+</div>
+
+<div>
+
+<label>Return Date</label>
+
+<input
+type="date"
+id="returnDate">
+
+</div>
+
+<div style="grid-column:1 / span 2;">
+
+<label>Remarks</label>
+
+<textarea
+id="remarks"
+rows="5"
+placeholder="Enter Remarks"></textarea>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Buttons -->
+
+<div class="buttons">
+
+<button
+type="reset"
+class="reset-btn">
+
+Reset
+
+</button>
+
+<button
+type="submit"
+class="submit-btn">
+
+Submit Gate Pass
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="../js/gatepass.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Intender Registration | RINL</title>
+
+<link rel="stylesheet" href="../css/register.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="register-box">
+
+<h1>RINL</h1>
+
+<h3>Material Gate Pass System</h3>
+
+<h2>Create New Account</h2>
+
+<form action="../RegisterServlet" method="post">
+
+<div class="row">
+
+<input
+type="text"
+name="employeeId"
+placeholder="Employee ID"
+required>
+
+<input
+type="text"
+name="fullName"
+placeholder="Employee Name"
+required>
+
+</div>
+
+<div class="row">
+
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
+
+<input
+type="text"
+name="mobile"
+placeholder="Mobile Number"
+required>
+
+</div>
+
+<div class="row">
+
+<select
+name="department"
+required>
+
+<option value="">Select Department</option>
+
+<option>IT & ERP</option>
+
+<option>Mechanical</option>
+
+<option>Electrical</option>
+
+<option>Production</option>
+
+<option>Finance</option>
+
+<option>Stores</option>
+
+<option>Safety</option>
+
+<option>Others</option>
+
+</select>
+
+<select
+name="designation"
+required>
+
+<option value="">Select Designation</option>
+
+<option>Engineer</option>
+
+<option>Manager</option>
+
+<option>Supervisor</option>
+
+<option>Employee</option>
+
+</select>
+
+</div>
+
+<div class="row">
+
+<input
+type="password"
+name="password"
+placeholder="Password"
+required>
+
+<input
+type="password"
+name="confirmPassword"
+placeholder="Confirm Password"
+required>
+
+</div>
+
+<button type="submit">
+
+Create Account
+
+</button>
+
+<p>
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="../js/register.js"></script>
+
+</body>
+
+</html>

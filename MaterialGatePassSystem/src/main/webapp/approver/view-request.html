@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>View Request | Approver</title>
+
+    <link rel="stylesheet" href="../css/view-request.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-industry"></i>
+
+            <h2>RINL</h2>
+
+        </div>
+
+        <ul>
+
+            <li onclick="location.href='dashboard.html'">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </li>
+
+            <li class="active">
+
+                <i class="fa-solid fa-file-circle-check"></i>
+
+                View Request
+
+            </li>
+
+            <li onclick="location.href='../index.html'">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="navbar">
+
+            <h1>Gate Pass Request Details</h1>
+
+            <button onclick="window.print()">
+
+                <i class="fa-solid fa-print"></i>
+
+                Print
+
+            </button>
+
+        </div>
+
+        <!-- Request Details -->
+
+        <div class="card">
+
+            <h2>Request Information</h2>
+
+            <div class="grid">
+
+                <div>
+
+                    <label>Request ID</label>
+
+                    <input type="text" value="GP001" readonly>
+
+                </div>
+
+                <div>
+
+                    <label>Status</label>
+
+                    <input type="text" value="Pending" readonly>
+
+                </div>
+
+                <div>
+
+                    <label>Employee Name</label>
+
+                    <input type="text" value="Gunadeep" readonly>
+
+                </div>
+
+                <div>
+
+                    <label>Department</label>
+
+                    <input type="text" value="IT & ERP" readonly>
+
+                </div>
+
+                <div>
+
+                    <label>Gate Pass Type</label>
+
+                    <input type="text" value="Returnable" readonly>
+
+                </div>
+
+                <div>
+
+                    <label>Priority</label>
+
+                    <input type="text" value="Normal" readonly>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Material Details -->
+
+        <div class="card">
+
+            <h2>Material Details</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Material</th>
+
+                        <th>Category</th>
+
+                        <th>Quantity</th>
+
+                        <th>Unit</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Steel Rod</td>
+
+                        <td>Raw Material</td>
+
+                        <td>100</td>
+
+                        <td>Kg</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Vehicle -->
+
+        <div class="card">
+
+            <h2>Vehicle Details</h2>
+
+            <div class="grid">
+
+                <input type="text" value="AP31AB1234" readonly>
+
+                <input type="text" value="Truck" readonly>
+
+                <input type="text" value="ABC Transport" readonly>
+
+            </div>
+
+        </div>
+
+        <!-- Driver -->
+
+        <div class="card">
+
+            <h2>Driver Details</h2>
+
+            <div class="grid">
+
+                <input type="text" value="Ramesh" readonly>
+
+                <input type="text" value="9876543210" readonly>
+
+                <input type="text" value="DL123456789" readonly>
+
+            </div>
+
+        </div>
+
+        <!-- Destination -->
+
+        <div class="card">
+
+            <h2>Destination Details</h2>
+
+            <div class="grid">
+
+                <input type="text" value="Visakhapatnam Port" readonly>
+
+                <input type="text" value="15-07-2026" readonly>
+
+                <textarea readonly>Material Dispatch for Production Unit</textarea>
+
+            </div>
+
+        </div>
+
+        <!-- Documents -->
+
+        <div class="card">
+
+            <h2>Attached Documents</h2>
+
+            <button>View Invoice</button>
+
+            <button>View Material Image</button>
+
+            <button>View Supporting Document</button>
+
+        </div>
+
+        <!-- Remarks -->
+
+        <div class="card">
+
+            <h2>Approver Remarks</h2>
+
+            <textarea id="remarks" placeholder="Enter remarks before approval or rejection"></textarea>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button class="back-btn" onclick="location.href='dashboard.html'">
+
+                Back
+
+            </button>
+
+            <button class="reject-btn" id="rejectBtn">
+
+                Reject
+
+            </button>
+
+            <button class="approve-btn" id="approveBtn">
+
+                Approve
+
+            </button>
+
+        </div>
+
+    </div>
+
+</

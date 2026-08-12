@@ -1,0 +1,168 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+
+    background-image:
+        linear-gradient(rgba(0,40,80,0.65), rgba(0,40,80,0.65)),
+        url("../images/steel-plant.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:white;
+}
+
+
+
+nav{
+    width:100%;
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 70px;
+
+    background:rgba(0,0,0,.18);
+
+    backdrop-filter:blur(8px);
+
+}
+.logo img{
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.hero{
+    text-align:center;
+    margin-top:60px;
+}
+
+.hero h3{
+    font-size:22px;
+    font-weight:400;
+}
+
+.hero h4{
+    margin-top:8px;
+    font-size:18px;
+    font-weight:300;
+}
+
+.hero h1{
+
+font-size:72px;
+
+font-weight:700;
+
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.portal-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:70px;
+    flex-wrap:wrap;
+}
+
+.portal-card{
+    width:320px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.portal-card{
+
+transition:.5s;
+
+}
+
+.portal-card:hover{
+
+transform:translateY(-18px);
+
+box-shadow:0 25px 50px rgba(0,0,0,.4);
+
+}
+
+.portal-card i{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.portal-card h2{
+    margin-bottom:15px;
+}
+
+.portal-card p{
+    font-size:16px;
+    margin-bottom:25px;
+}
+
+.portal-card button{
+
+width:100%;
+
+padding:15px;
+
+font-size:18px;
+
+font-weight:600;
+
+border:none;
+
+border-radius:50px;
+
+background:#FFC107;
+
+color:#003366;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.portal-card button:hover{
+
+background:white;
+
+transform:scale(1.06);
+
+}
+
+footer{
+    margin-top:80px;
+    text-align:center;
+    padding:20px;
+    background:rgba(255,255,255,.15);
+}

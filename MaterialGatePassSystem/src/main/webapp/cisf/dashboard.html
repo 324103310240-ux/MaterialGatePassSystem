@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CISF Dashboard</title>
+
+<link rel="stylesheet" href="../css/cisf-dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h2>CISF</h2>
+
+</div>
+
+<ul>
+
+<li class="active">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-qrcode"></i>
+
+Verify Gate Pass
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-truck"></i>
+
+Vehicle Entry
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-truck-arrow-right"></i>
+
+Vehicle Exit
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+Verification History
+
+</li>
+
+<li onclick="location.href='../index.html'">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<h1>
+
+CISF Verification Dashboard
+
+</h1>
+
+<div class="user">
+
+<i class="fa-solid fa-bell"></i>
+
+<span>CISF Officer</span>
+
+<i class="fa-solid fa-circle-user"></i>
+
+</div>
+
+</div>
+
+<!-- Welcome -->
+
+<div class="welcome">
+
+<h2>
+
+Welcome Officer 👮
+
+</h2>
+
+<p>
+
+Material Gate Pass Verification Portal
+
+</p>
+
+</div>
+
+<!-- Dashboard Cards -->
+
+<div class="cards">
+
+<div class="card verify">
+
+<i class="fa-solid fa-qrcode"></i>
+
+<h3>Verified Today</h3>
+
+<h1>32</h1>
+
+</div>
+
+<div class="card entry">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+<h3>Vehicle Entry</h3>
+
+<h1>21</h1>
+
+</div>
+
+<div class="card exit">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+<h3>Vehicle Exit</h3>
+
+<h1>18</h1>
+
+</div>
+
+<div class="card pending">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>Pending Verification</h3>
+
+<h1>5</h1>
+
+</div>
+
+</div>
+
+<!-- Search -->
+
+<div class="search-box">
+
+<h2>Verify Gate Pass</h2>
+
+<div class="search-area">
+
+<input
+type="text"
+id="gatepass"
+placeholder="Enter Gate Pass Number">
+
+<button id="verifyBtn">
+
+Verify
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Table -->
+
+<div class="table-box">
+
+<h2>
+
+Today's Verification
+
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Gate Pass</th>
+
+<th>Vehicle No</th>
+
+<th>Driver</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>GP001</td>
+
+<td>AP31AB1234</td>
+
+<td>Ramesh</td>
+
+<td>
+
+<span class="verified">
+
+Verified
+
+</span>
+
+</td>
+
+<td>
+
+<button>
+
+View
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>GP002</td>
+
+<td>AP39XY5678</td>
+
+<td>Suresh</td>
+
+<td>
+
+<span class="pending-text">
+
+Pending
+
+</span>
+
+</td>
+
+<td>
+
+<button>
+
+Verify
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../js/cisf-dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Material Gate Pass System</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-industry"></i>
+
+        <h2>RINL</h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        <li onclick="location.href='apply-gatepass.html'">
+            <i class="fa-solid fa-file-circle-plus"></i>
+            Apply Gate Pass
+        </li>
+
+        <li onclick="location.href='my-applications.html'">
+            <i class="fa-solid fa-folder-open"></i>
+            My Applications
+        </li>
+
+        <li>
+            <i class="fa-solid fa-chart-line"></i>
+            Reports
+        </li>
+
+        <li>
+            <i class="fa-solid fa-user"></i>
+            Profile
+        </li>
+
+        <li onclick="location.href='../index.html'">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </li>
+
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+
+    <!-- Navbar -->
+
+    <div class="navbar">
+
+        <h1>
+
+            Material Gate Pass System
+
+        </h1>
+
+        <div class="user">
+
+            <i class="fa-solid fa-bell"></i>
+
+            <span>Gunadeep</span>
+
+            <i class="fa-solid fa-circle-user"></i>
+
+        </div>
+
+    </div>
+
+    <!-- Welcome -->
+
+    <div class="welcome">
+
+        <h2>Welcome 👋</h2>
+
+        <p>
+
+            Intender Dashboard
+
+        </p>
+
+    </div>
+
+    <!-- Cards -->
+
+    <div class="cards">
+
+        <div class="card total">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <h3>Total Requests</h3>
+
+            <h1>25</h1>
+
+        </div>
+
+        <div class="card pending">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>Pending</h3>
+
+            <h1>8</h1>
+
+        </div>
+
+        <div class="card approved">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h3>Approved</h3>
+
+            <h1>14</h1>
+
+        </div>
+
+        <div class="card rejected">
+
+            <i class="fa-solid fa-circle-xmark"></i>
+
+            <h3>Rejected</h3>
+
+            <h1>3</h1>
+
+        </div>
+
+    </div>
+
+    <!-- Table -->
+
+    <div class="table-box">
+
+        <h2>
+
+            Recent Applications
+
+        </h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Request ID</th>
+
+                    <th>Material</th>
+
+                    <th>Date</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>REQ001</td>
+
+                    <td>Steel Rods</td>
+
+                    <td>13-07-2026</td>
+
+                    <td>
+
+                        <span class="status pending-text">
+
+                            Pending
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <button>
+
+                            View
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>REQ002</td>
+
+                    <td>Copper Cable</td>
+
+                    <td>12-07-2026</td>
+
+                    <td>
+
+                        <span class="status approved-text">
+
+                            Approved
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <button>
+
+                            View
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>REQ003</td>
+
+                    <td>Safety Helmet</td>
+
+                    <td>10-07-2026</td>
+
+                    <td>
+
+                        <span class="status rejected-text">
+
+                            Rejected
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <button>
+
+                            View
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
